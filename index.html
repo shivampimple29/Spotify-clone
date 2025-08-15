@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="logo.png" />
+  <title>Spotify - Web Player : Music for everyone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home,language" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300,400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="sticky-nav">
+    <i class="fa-brands fa-spotify" style="font-size: 2.1rem; padding: 1.25rem"></i>
+    <div class="wrap">
+      <span class="material-symbols-outlined" style="
+            font-size: 2rem;
+            padding: 0.75rem;
+            font-variation-settings: 'FILL' 1;
+          ">home</span>
+    </div>
+
+    <div class="searchbar">
+      <i class="fa-solid fa-magnifying-glass" style="font-size: 1.5rem; margin: 0.75rem; opacity: 0.6"></i>
+      <input type="text" placeholder="What do you want to play?" />
+      <span></span>
+      <img src="browse_icon.png" alt="browse_icon" />
+    </div>
+
+    <div class="part2">
+      <div class="setof3">
+        <span style="opacity: 0.6">Premium</span>
+        <span style="opacity: 0.6">Support</span>
+        <span style="opacity: 0.6">Download</span>
+      </div>
+
+      <span style="
+            display: inline-block;
+            height: 1.5rem;
+            border-left: 2px solid white;
+            margin-left: 1.75rem;
+          "></span>
+
+      <div class="right-nav">
+        <i class="fa-regular fa-circle-down"></i>
+        <p>Install App</p>
+      </div>
+
+      <div class="right-nav">
+        <p>Sign up</p>
+      </div>
+
+      <div class="Log-in">
+        <button>Log in</button>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="sidebar">
+      <div class="library">
+        <div class="options">
+          <div class="lib-options nav-option">
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy , we'll help you</p>
+            <button class="badge">Create playlist</button>
+          </div>
+        </div>
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1">Let's find a podcast to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcast</button>
+          </div>
+        </div>
+        <div class="other">
+          <span>Legal</span>
+          <span>Safety & Privacy Center</span>
+          <span>Privacy Policy</span>
+          <span>About Ads</span>
+          <span>Accessibility</span>
+        </div>
+        <div class="other , anchor">
+          <span style="
+                font-size: 0.75rem;
+                opacity: 1;
+                margin-top: 0.7rem;
+                font-weight: 600;
+              ">Cookies</span>
+        </div>
+
+        <button class="lang-button">
+          <span class="material-symbols-outlined" style="font-size: 1.3rem">language</span>English
+        </button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="heading">
+        <h2>Trending songs</h2>
+        <h5 class="anchor" style="padding-right: 1.5rem; opacity: 0.8">
+          Show all
+        </h5>
+      </div>
+      <div class="cards-container">
+        
+        <div class="card">
+          <img src="1.1.png" alt="card1img" class="card-img" />
+          <p class="card-title">Raanjhan (From "Do Patti")</p>
+          <p class="card-info" style="margin-bottom: -2rem;">Sachet-Parampara, Parampara Tandon...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+          </div>
+          
+        <div class="card">
+          <img src="1.2.png" alt="card1img" class="card-img" />
+          <p class="card-title">Sapphire</p>
+          <p class="card-info" style="margin-bottom: -0.1rem;">Ed Sheeran</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="1.3.png" alt="card1img" class="card-img" />
+          <p class="card-title">Pardesiya - From "Param Sundari"</p>
+          <p class="card-info" style="margin-bottom: -2rem;">Sachin-Jigar, Sonu Nigam,Krishnakali Saha..</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="1.4.png" alt="card1img" class="card-img" />
+          <p class="card-title">
+            Akhiyaan Gulaab (From "Teri Baaton Mein Aisa..
+          </p>
+          <p class="card-info" style="margin-bottom: -1rem;">Mitraz</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="1.5.png" alt="card1img" class="card-img" />
+          <p class="card-title">Blinding Lights</p>
+          <p class="card-info" style="margin-bottom: -0.1rem;">The Weeknd</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="1.6.png" alt="card1img" class="card-img" />
+          <p class="card-title">Nadaaniyan</p>
+          <p class="card-info" style="margin-bottom: -0.1rem;">Akshath</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+      </div>
+
+      <div class="heading">
+        <h2>Popular artists</h2>
+        <h5 class="anchor" style="padding-right: 1.5rem; opacity: 0.8">
+          Show all
+        </h5>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="2.1.png" alt="card1img" class="card-img" style="border-radius: 50%" />
+          <p class="card-title">Pritam</p>
+          <p class="card-info">Arists</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="2.2.png" alt="card1img" class="card-img" style="border-radius: 50%" />
+          <p class="card-title">A.R. Rahman</p>
+          <p class="card-info">Arists</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="2.3.png" alt="card1img" class="card-img" style="border-radius: 50%" />
+          <p class="card-title">Arijit Singh</p>
+          <p class="card-info">Arists</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="2.4.png" alt="card1img" class="card-img" style="border-radius: 50%" />
+          <p class="card-title">Sachin-Jigar</p>
+          <p class="card-info">Arists</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="2.5.png" alt="card1img" class="card-img" style="border-radius: 50%" />
+          <p class="card-title">Vishal-Shekhar</p>
+          <p class="card-info">Arists</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="2.6.png" alt="card1img" class="card-img" style="border-radius: 50%" />
+          <p class="card-title">Atif Aslam</p>
+          <p class="card-info">Arists</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+      </div>
+
+      <div class="heading">
+        <h2>Popular albums and singles</h2>
+        <h5 class="anchor" style="padding-right: 1.5rem; opacity: 0.8">
+          Show all
+        </h5>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="3.1.png" alt="card1img" class="card-img" />
+          <p class="card-title">Aashiqui 2</p>
+          <p class="card-info" style="margin-bottom: -1rem;">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="3.2.png" alt="card1img" class="card-img" />
+          <p class="card-title">Yeh Jawaani Hai Deewani</p>
+          <p class="card-info" style="margin-bottom: -1.2rem;" >Pritam</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="3.3.png" alt="card1img" class="card-img" />
+          <p class="card-title">Hurry Up tomorrow</p>
+          <p class="card-info" style="margin-bottom: -0.1rem;">Weeknd</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="3.4.png" alt="card1img" class="card-img" />
+          <p class="card-title">Tum Se Hi</p>
+          <p class="card-info" style="margin-bottom: -1.1rem;">Pritam, Mohit Chauhan, Irshad Kamil</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="3.5.png" alt="card1img" class="card-img" />
+          <p class="card-title">jo Tum Mere Ho</p>
+          <p class="card-info" style="margin-bottom: -0.1rem;">Anuv Jain</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="3.6.png" alt="card1img" class="card-img" />
+          <p class="card-title">Blue Eyes</p>
+          <p class="card-info" style="margin-bottom: -0.1rem;">Yo Yo Honey Singh</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+      </div>
+
+      <div class="heading">
+        <h2>Popular radio</h2>
+        <h5 class="anchor" style="padding-right: 1.5rem; opacity: 0.8">
+          Show all
+        </h5>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="4.1.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">With Sachin-Jigar, Jeet Gannguli, Atif Aslam an...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="4.2.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">With Pritam, Mustafa Zahid, Atif Aslam and...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="4.3.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">With A.R. Rahman, Salim-Sulaiman, Ajay-...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="4.4.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">With Kumar Sanu, Vinod Rathod, Udit Narayan...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="4.5.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">With Karan Aujla, Sidhu Moose Wala, AP Dhillon..</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="4.6.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">With Mukesh, Tabassum, Lata Mangeshkar and...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+      </div>
+
+      <div class="heading">
+        <h2>Featured charts</h2>
+        <h5 class="anchor" style="padding-right: 1.5rem; opacity: 0.8">
+          Show all
+        </h5>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="5.1.jpeg" alt="card1img" class="card-img" />
+
+          <p class="card-info">
+            Your weekly update of the most played tracks...
+          </p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="5.2.jpeg" alt="card1img" class="card-img" />
+
+          <p class="card-info">Your daily update of most played tracks...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="5.3.jpeg" alt="card1img" class="card-img" />
+
+          <p class="card-info">
+            Your daily update of the most played tracks righ...
+          </p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="5.4.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">
+            Your daily update of the most played tracks righ...
+          </p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="5.5.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">
+            Your daily update of the most viral tracks right...
+          </p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="5.6.png" alt="card1img" class="card-img" />
+
+          <p class="card-info">
+            Your daily update of the most viral tracks right...
+          </p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+      </div>
+
+      <div class="heading">
+        <h2>India's best</h2>
+        <h5 class="anchor" style="padding-right: 1.5rem; opacity: 0.8">
+          Show all
+        </h5>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="6.1.png" alt="card1img" class="card-img" />
+          
+          <p class="card-info">Hottest Hindi music that India is listening to....</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="6.2.png" alt="card1img" class="card-img" />
+          
+          <p class="card-info">Hottest tracks from your favourite I-Pop Icons....</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="6.3.png" alt="card1img" class="card-img" />
+          
+          <p class="card-info">All that's viral, stream now! Cover - Karan Auj...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="6.4.png" alt="card1img" class="card-img" />
+          
+          <p class="card-info">Bollywood Central, jab baje toh seedha dil ke...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="6.5.png" alt="card1img" class="card-img" />
+          
+          <p class="card-info">India's Rap Scene. Cover - Dhanda Nyoliwala</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+        <div class="card">
+          <img src="6.6.png" alt="card1img" class="card-img" />
+          
+          <p class="card-info">Finest collection of Tamil Music from the past 10...</p>
+          <img src="player-logo.png" alt="player-logo" class="player-logo">
+        </div>
+      </div>
+
+      <footer>
+        <div class="line"></div>
+      </footer>
+
+      <div class="bottom">
+        <div class="menu">
+          <div class="menu-header">Company</div>
+          <div class="menu-items">About</div>
+          <div class="menu-items">Jobs</div>
+          <div class="menu-items">For the Record</div>
+        </div>
+
+        <div class="menu">
+          <div class="menu-header">Communities</div>
+          <div class="menu-items">For Artists</div>
+          <div class="menu-items">Developers</div>
+          <div class="menu-items">Advertising</div>
+          <div class="menu-items">Investors</div>
+          <div class="menu-items">Vendors</div>
+        </div>
+        <div class="menu">
+          <div class="menu-header">Useful links</div>
+          <div class="menu-items">Support</div>
+          <div class="menu-items">Free Mobile App</div>
+          <div class="menu-items">Popular by Country</div>
+        </div>
+        <div class="menu">
+          <div class="menu-header">Spotify Plans</div>
+          <div class="menu-items">Premium Individual</div>
+          <div class="menu-items">Premium Duo</div>
+          <div class="menu-items">Premium Family</div>
+          <div class="menu-items">Premium Student</div>
+          <div class="menu-items">Spotify Free</div>
+        </div>
+        <div class="social">
+          <div class="wrap"><i class="fa-brands fa-instagram"></i></div>
+          <div class="wrap"><i class="fa-brands fa-twitter"></i></div>
+          <div class="wrap"><i class="fa-brands fa-facebook"></i></div>
+        </div>
+      </div>
+      <footer style="height: 65px">
+        <div class="line"></div>
+      </footer>
+
+      <div class="last">&copy;2025 Spotify AB</div>
+    </div>
+  </div>
+
+  <div class="music-player">
+    <div class="album">
+      <img src="musicplayer.jpeg" alt="album poster" />
+      <div class="song-details">
+        <p class="para1">Starboy</p>
+        <p class="para2">The Weeknd, Daft Punk</p>
+      </div>
+      <div class="music-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-circle-check" style="color: #00e676"></i>
+      </div>
+    </div>
+    <div class="player">
+      <div class="player-controls">
+        <img src="player_icon1.png" alt="" />
+        <img src="player_icon2.png" alt="" />
+        <img src="player_icon3.png" alt="" style="height: 2rem; width: 2rem; opacity: 1" />
+        <img src="player_icon4.png" alt="" />
+        <img src="player_icon5.png" alt="" />
+      </div>
+      <div class="playback-bar">
+        <span class="curr-time">00:00</span>
+        <input type="range" min="0" max="100" class="progress-bar" />
+        <span class="tot-time">3.33</span>
+      </div>
+    </div>
+    <div class="controls">
+      <img src="first.png" alt="play icon" />
+      <img src="second.png" alt="playlist" />
+      <img src="third.png" alt="chapters" />
+      <img src="fourth.png" alt="volume" />
+      <input type="range" min="0" max="100" height="1rem" width="1rem" />
+      <img src="fifth.png" alt="miniplayer" style="padding-bottom: 0.45rem" />
+      <img src="sixth.png" alt="maximize" />
+    </div>
+  </div>
+</body>
+
+</html>
