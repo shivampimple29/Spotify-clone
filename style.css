@@ -295,7 +295,7 @@ button:hover {
     opacity: 0.8;
 }
 
-.other span:hover{
+.other span:hover {
     cursor: pointer;
 }
 
@@ -326,8 +326,14 @@ button:hover {
     margin-right: 0.5rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1155px) {
     .hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hide2 {
         display: none;
     }
 }
@@ -373,8 +379,6 @@ button:hover {
     transition: all 0.3s ease-in;
 }
 
-
-
 .card:hover {
     background-color: #232323;
     cursor: pointer;
@@ -384,9 +388,6 @@ button:hover {
     opacity: 1;
     bottom: 8rem;
 }
-
-
-
 
 .anchor {
     transition: all 0.2s ease;
@@ -453,8 +454,7 @@ footer {
     opacity: 1;
 }
 
-.social{
-    
+.social {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -462,18 +462,18 @@ footer {
     margin-left: auto;
 }
 
-.social i{
+.social i {
     font-size: 1.2rem;
 }
 
-.social .wrap:hover{
+.social .wrap:hover {
     background-color: rgba(255, 255, 255, 0.444);
 }
 
 .last {
     height: 150px;
     opacity: 0.6;
-    font-size: 0.9rem ;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -501,8 +501,9 @@ footer {
     opacity: 0.6;
 }
 
-.para1:hover, .para2:hover{
-    cursor:pointer;
+.para1:hover,
+.para2:hover {
+    cursor: pointer;
     opacity: 1;
     text-decoration: underline;
 }
@@ -540,24 +541,27 @@ footer {
 
 .progress-bar {
     width: 70%;
-    appearance: none;
-    background-color: transparent;
+    accent-color: #fff;
+    outline: none;
     cursor: pointer;
 }
 
 .progress-bar::-webkit-slider-runnable-track {
-    background-color: #ddd;
     border-radius: 100px;
     height: 0.2rem;
 }
 
 .progress-bar::-webkit-slider-thumb {
-    appearance: none;
+    accent-color: #00e676;
     height: 1rem;
     width: 1rem;
     background: #00e676;
     border-radius: 50%;
     margin-top: -6px;
+}
+
+.playback-bar input[type="range"]:active {
+    accent-color: #00e676;
 }
 
 .controls {
@@ -571,6 +575,19 @@ footer {
 .controls img {
     height: 2rem;
     width: 2rem;
-    
+    opacity: 0.8;
 }
 
+.controls img:hover {
+    opacity: 1;
+}
+
+.controls input[type="range"] {
+    accent-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.controls input[type="range"]:active {
+    accent-color: #00e676;
+}
